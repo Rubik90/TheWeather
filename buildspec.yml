@@ -22,5 +22,5 @@ phases:
 artifacts:
   files:
     - './app/build/outputs/apk/debug/app-debug.apk'
-    - './app/build/outputs/buildspec.yml'
     - './app/build/reports/lint-results-debug.html'
+    - './app/build/outputs/buildspec.yml'
