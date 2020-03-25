@@ -10,7 +10,7 @@ public class CustomIssueRegistry extends IssueRegistry {
 
     @Override
     public List<Issue> getIssues() {
-        return Arrays.asList(TheWeatherDetector.ISSUE,LintDetector.ISSUE,CustomViewAndAttributeDetector.ISSUE);
+        return Arrays.asList(TheWeatherDetector.ISSUE,LintDetector.ISSUE,ShortClassDetector.ISSUE);
     }
 
     @Override public int getApi() { return com.android.tools.lint.detector.api.ApiKt.CURRENT_API; }

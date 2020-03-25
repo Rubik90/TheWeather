@@ -24,7 +24,7 @@ android {
         //checkAllWarnings true
         enable 'TheWeatherCheck'
         enable 'LintCheck'
-        enable 'CustomViewIssue'
+        enable 'Class2Short'
     }
 
 }
