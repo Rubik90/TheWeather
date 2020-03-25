@@ -15,18 +15,19 @@ import static com.android.SdkConstants.ATTR_LABEL;
 import static com.android.SdkConstants.TAG_APPLICATION;
 
 public class TheWeatherDetector extends Detector
+
         implements Detector.XmlScanner {
 
         public static final Issue ISSUE = Issue.create(
-                "TheWeatherCheck",                                        //ID
-                "Titolo inaspettato",                      //brief description
-                "Il titolo dell'applicazione dovrebbe essere 'TheWeather'",  //explanation
-                Category.CORRECTNESS,                                //category
-                5,                                                   //priority
-                Severity.INFORMATIONAL,                              //severity
-                new Implementation(                                  //implementation
-                        TheWeatherDetector.class,                        //detector
-                        Scope.MANIFEST_SCOPE                             //scope
+                "TheWeatherCheck",
+                "Titolo inaspettato",
+                "Il titolo dell'applicazione dovrebbe essere 'TheWeather'",
+                Category.CORRECTNESS,
+                5,
+                Severity.INFORMATIONAL,
+                new Implementation(
+                        TheWeatherDetector.class,
+                        Scope.MANIFEST_SCOPE
                 )
         );
 

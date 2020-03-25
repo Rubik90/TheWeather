@@ -17,23 +17,15 @@ import org.jetbrains.uast.UastLiteralUtils;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Sample detector showing how to analyze Kotlin/Java code.
- * This example flags all string literals in the code that contain
- * the word "lint".
- */
+
 public class LintDetector extends Detector implements UastScanner {
-    /** Issue describing the problem and pointing to the detector implementation */
+
     public static final Issue ISSUE = Issue.create(
-            // ID: used in @SuppressLint warnings etc
+
             "LintCheck",
 
-            // Title -- shown in the IDE's preference dialog, as category headers in the
-            // Analysis results window, etc
             "Lint menzionato",
 
-            // Full explanation of the issue; you can use some markdown markup such as
-            // `monospace`, *italic*, and **bold**.
             "Questo controllo evidenzia le stringhe che menzionano la parola 'lint'",
             Category.CORRECTNESS,
             6,
