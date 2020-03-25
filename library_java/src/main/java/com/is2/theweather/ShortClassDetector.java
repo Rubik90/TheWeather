@@ -18,21 +18,16 @@ import java.util.Collections;
 import java.util.List;
 
 public class ShortClassDetector extends Detector implements UastScanner {
-    //Issue décrivant le problème et pointant vers l'implementation du détecteur
 
     public static final Issue ISSUE = Issue.create(
-            // ID: utilisé dans les avertissements "warning" @SuppressLint etc
+
             "Class2Short",
 
-            //Titre -- montré dans le dialogue de préférences de l'IDE, comme en-tête de catégorie
-            // dans la fenêtre de résultats de l'analyse, etc
-            "Class Declaration Too Short",
+            "Dichiarazione della classe troppo corta",
 
-            //Description complète de l'issue
-            "This check highlights classes declaration which name is shorter" +
-                    " or equal than three character\n" +
-                    "Class name must be named in a way to identify them properly.\n" +
-                    "A name too short can't communicate the class purpose properly.\n",
+            "Questo controllo evidenzia le classi che hanno un nome più breve o uguale a 4 caratteri.\n" +
+                       "Il nome della classe deve essere abbastanza lungo da identificarla appropriatamente.\n" +
+                    "Un nome troppo corto non indica bene il proposito della classe.\n",
 
             Category.CORRECTNESS,
             6,
@@ -57,11 +52,11 @@ public class ShortClassDetector extends Detector implements UastScanner {
                 try {
                     if (string.length() <= 3){
                         context.report(ISSUE, node, context.getNameLocation(node),
-                                "This class is too short, please give it a proper description**");
+                                "Questa classe ha un nome troppo corto, inseriscine uno più descrittivo");
                     }
                 }
                 catch (Exception e) {
-                    System.out.println("Exception occurred about string length");
+                    System.out.println("Eccezione sulla lunghezza di questa stringa");
                 }
             }
         };

@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4215b8c-a120-41a3-89f5-34a94ea94709" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/is2/theweather/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/is2/theweather/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/is2/theweather/SecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/is2/theweather/SecondActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/ShortClassDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/ShortClassDetector.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
