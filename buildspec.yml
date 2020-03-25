@@ -4,7 +4,6 @@ phases:
   pre_build:
     commands:
       - echo PreBuild started on `date`
-      - find . -name *.yml
       - bash library_java/../gradlew clean install
       - bash ./gradlew lintDebug
       - echo PreBuild finished on `date`
@@ -17,9 +16,8 @@ phases:
       - echo Build completed on `date`
       - ls -ltr
       - find . -name *.apk
-      - find . -name *.yml
 artifacts:
   files:
     - './app/build/outputs/apk/debug/app-debug.apk'
     - './app/build/reports/lint-results-debug.html'
-    - './app/build/outputs/buildspec.yml'
+    - './app/buildspec.yml'
