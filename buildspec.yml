@@ -4,13 +4,13 @@ phases:
   pre_build:
     commands:
       - echo PreBuild started on `date`
+      - find . -name *.yml
       - bash library_java/../gradlew clean install
       - bash ./gradlew lintDebug
       - echo PreBuild finished on `date`
   build:
     commands:
       - echo Build started on `date`
-      - find . -name *.yml
       - bash ./gradlew assembleDebug
   post_build:
     commands:
