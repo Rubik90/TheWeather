@@ -31,7 +31,7 @@ public class TheWeatherDetector extends Detector
                 )
         );
 
-        private static final String TITLE = "Hello world";
+        private static final String TITLE = "TheWeather";
 
         @Override public Collection<String> getApplicableAttributes() {
                 return Arrays.asList(ATTR_LABEL);

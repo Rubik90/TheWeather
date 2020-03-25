@@ -23,6 +23,7 @@ android {
         textReport false
         //checkAllWarnings true
         enable 'TheWeatherCheck'
+        enable 'LintCheck'
     }
 
 }
