@@ -6,77 +6,78 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="14"
-8-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml
+8-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml
+9-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:5:5-67
-11-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:5:22-64
+11-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:7:5-36:19
+13-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:7:5-36:19
 14        android:allowBackup="true"
-14-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:8:9-35
+14-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.1.0] /home/antonio/.gradle/caches/transforms-2/files-2.1/1cd7eff88f5e86d0249af2958bf465f0/core-1.1.0/AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.1.0] C:\Users\Antonio\.gradle\caches\transforms-2\files-2.1\1cd7eff88f5e86d0249af2958bf465f0\core-1.1.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:9:9-43
+17-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:10:9-41
+18-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:11:9-54
+19-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:12:9-35
-21        android:theme="@style/AppTheme"
-21-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:14:9-40
-22        android:usesCleartextTraffic="true" >
-22-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:13:9-44
-23        <activity android:name="com.is2.theweather.MainActivity" >
-23-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:15:9-21:20
-23-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:15:19-47
-24            <intent-filter>
-24-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:16:13-20:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:17:17-69
-25-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:17:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:19:17-77
-27-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:19:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity
-30-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:22:9-28:20
-31            android:name="com.is2.theweather.SecondActivity"
-31-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:22:19-49
-32            android:label="Do you want to share?"
-32-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:23:13-52
-33            android:parentActivityName="com.is2.theweather.MainActivity" >
-33-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:24:13-55
-34            <meta-data
-34-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:25:13-27:49
-35                android:name="android.support.PARENT_ACTIVITY"
-35-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:26:17-63
-36                android:value=".MainActivity" />
-36-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:27:17-46
-37        </activity>
-38        <activity
-38-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:29:9-35:20
-39            android:name="com.is2.theweather.InfoActivity"
-39-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:29:19-47
-40            android:label="About this app"
-40-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:30:13-45
-41            android:parentActivityName="com.is2.theweather.MainActivity" >
-41-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:31:13-55
-42            <meta-data
-42-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:25:13-27:49
-43                android:name="android.support.PARENT_ACTIVITY"
-43-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:26:17-63
-44                android:value=".MainActivity" />
-44-->/home/antonio/Scaricati/TheWeather/app/src/main/AndroidManifest.xml:27:17-46
-45        </activity>
-46    </application>
-47
-48</manifest>
+20-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme"
+22-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:14:9-40
+23        android:usesCleartextTraffic="true" >
+23-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:13:9-44
+24        <activity android:name="com.is2.theweather.MainActivity" >
+24-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:15:9-21:20
+24-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:15:19-47
+25            <intent-filter>
+25-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:16:13-20:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:17:17-69
+26-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:17:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:19:17-77
+28-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:19:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:22:9-28:20
+32            android:name="com.is2.theweather.SecondActivity"
+32-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:22:19-49
+33            android:label="Do you want to share?"
+33-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:23:13-52
+34            android:parentActivityName="com.is2.theweather.MainActivity" >
+34-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:24:13-55
+35            <meta-data
+35-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:25:13-27:49
+36                android:name="android.support.PARENT_ACTIVITY"
+36-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:26:17-63
+37                android:value=".MainActivity" />
+37-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:27:17-46
+38        </activity>
+39        <activity
+39-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:29:9-35:20
+40            android:name="com.is2.theweather.InfoActivity"
+40-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:29:19-47
+41            android:label="About this app"
+41-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:30:13-45
+42            android:parentActivityName="com.is2.theweather.MainActivity" >
+42-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:31:13-55
+43            <meta-data
+43-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:25:13-27:49
+44                android:name="android.support.PARENT_ACTIVITY"
+44-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:26:17-63
+45                android:value=".MainActivity" />
+45-->C:\Users\Antonio\Desktop\is2\TheWeather\app\src\main\AndroidManifest.xml:27:17-46
+46        </activity>
+47    </application>
+48
+49</manifest>

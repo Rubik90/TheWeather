@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  pre_build:
+    commands:
+      - echo Nothing to do in the PreBuild phase
+  build:
+    commands:
+      - echo Nothing to do in the Build phase
+  post_build:
+    commands:
+      - echo Nothing to do in the PostBuild phase
+artifacts:
+  files:
+    - './app/build/outputs/apk/debug/app-debug.apk'
