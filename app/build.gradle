@@ -20,7 +20,7 @@ android {
 
     lintOptions {
         abortOnError true
-        textReport true
+        textReport false
         //checkAllWarnings true
         enable 'TheWeatherCheck'
     }
