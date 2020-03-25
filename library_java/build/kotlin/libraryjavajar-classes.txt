@@ -1,0 +1,1 @@
+/home/antonio/Scaricati/TheWeather/library_java/build/classes/java/main/net/masonliu/androidlintplus/CustomIssueRegistry.class:/home/antonio/Scaricati/TheWeather/library_java/build/classes/java/main/net/masonliu/androidlintplus/TheWeatherDetector.class

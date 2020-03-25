@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  pre_build:
+    commands:
+      - echo PreBuild started on `date`
+      - bash ./gradlew lintDebug
+      - echo PreBuild finished on `date`
+  build:
+    commands:
+      - echo Build started on `date`
+      - bash ./gradlew assembleDebug
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - ls -ltr
+      - find . -name *.apk
+artifacts:
+  files:
+    - './app/build/outputs/apk/debug/app-debug.apk'
+    - './app/build/outputs/buildspec.yml'
+    - './app/build/reports/lint-results-debug.html'

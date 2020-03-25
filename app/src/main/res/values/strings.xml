@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Il nome sbagliato</string>
+    <string name="no_city">City not found</string>
+    <string name="city_name">Roma</string>
+    <string name="background">BACKGROUND</string>
+    <string name="edittext_hint">Enter a city. Ex: Napoli</string>
+    <string name="edittext_above">Enter a city in the box above</string>
+    <string name="check">Check</string>
+    <string name="temperature">25°</string>
+    <string name="coord">lon: 40°, lat: 14°</string>
+    <string name="main">Clear</string>
+    <string name="wind">20m/s</string>
+    <string name="sys">7:00/17:00</string>
+    <string name="meteo">Sunny</string>
+    <string name="data_ora">12:00</string>
+    <string name="next">Next</string>
+    <string name="textToShare">textToShare</string>
+    <string name="share_text_with">Choose how to share the weather</string>
+    <string name="shareButton">Share</string>
+    <string name="about">About</string>
+    <string name="quit">Quit</string>
+    <string name="aboutText">This app was created by Antonio Giordano as a project for Software Engineering II exam.
+                            The weather data comes from the following website www.openweathermap.org.
+                            OpenWeatherMap is an online service that provides weather data, including current weather data,
+                            forecasts, and historical data to the developers of web services and mobile applications.
+                            The date and time refer to the Italian time zone.</string>
+</resources>

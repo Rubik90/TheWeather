@@ -1,0 +1,4 @@
+#Tue Mar 24 21:48:33 CET 2020
+base.0=/home/antonio/Scaricati/TheWeather/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

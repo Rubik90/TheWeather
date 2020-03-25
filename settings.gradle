@@ -1,0 +1,2 @@
+include ':app', ':library_java'
+rootProject.name='TheWeather'
