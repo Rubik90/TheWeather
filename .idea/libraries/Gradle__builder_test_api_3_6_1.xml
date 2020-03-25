@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: builder-test-api-3.6.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.6.1/6eec6b0864108577ca35dacda43e977c6512ba30/builder-test-api-3.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.6.1/33f57c7661b9098444aba47013aa28f1ed7d1618/builder-test-api-3.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

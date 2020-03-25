@@ -49,17 +49,12 @@ public class MainActivity extends AppCompatActivity {
     private TextView coord;
     Button nextButton;
 
-    public class ac {
-
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        String aa = "测试";
+        String lintCheck = "Let's start with lint custom rules!";
         nextButton = findViewById(R.id.next);
         nextButton.setVisibility(View.INVISIBLE);
 

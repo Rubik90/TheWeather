@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Il nome sbagliato</string>
+    <string name="app_name">TheWeather!</string>
     <string name="no_city">City not found</string>
     <string name="city_name">Roma</string>
     <string name="background">BACKGROUND</string>

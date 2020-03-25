@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TheWeather.iml" filepath="$PROJECT_DIR$/TheWeather.iml" group="TheWeather" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="TheWeather/app" />
+      <module fileurl="file://$PROJECT_DIR$/library_java/library_java.iml" filepath="$PROJECT_DIR$/library_java/library_java.iml" group="TheWeather/library_java" />
+    </modules>
+  </component>
+</project>
