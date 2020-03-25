@@ -16,7 +16,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes('Lint-Registry': 'net.masonliu.androidlintplus.CustomIssueRegistry')
+        attributes('Lint-Registry': 'com.is2.theweather.CustomIssueRegistry')
     }
 }
 
