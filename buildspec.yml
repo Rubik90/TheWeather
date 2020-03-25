@@ -11,13 +11,14 @@ phases:
     commands:
       - echo Build started on `date`
       - bash ./gradlew assembleDebug
+      - echo Build completed on `date`
   post_build:
     commands:
-      - echo Build completed on `date`
       - ls -ltr
       - find . -name *.apk
 artifacts:
   files:
     - './app/build/outputs/apk/debug/app-debug.apk'
     - './app/build/reports/lint-results-debug.html'
+    - './app/build/reports/lint-results-debug.xml'
     - './app/buildspec.yml'
