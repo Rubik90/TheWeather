@@ -25,7 +25,7 @@ public class ShortClassDetector extends Detector implements UastScanner {
 
             "Dichiarazione della classe troppo corta",
 
-            "Questo controllo evidenzia le classi che hanno un nome più breve o uguale a 4 caratteri.\n" +
+            "Questo controllo evidenzia le classi che hanno un nome piu' breve o uguale a 4 caratteri.\n" +
                        "Il nome della classe deve essere abbastanza lungo da identificarla appropriatamente.\n" +
                     "Un nome troppo corto non indica bene il proposito della classe.\n",
 
