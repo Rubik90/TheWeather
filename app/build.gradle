@@ -24,7 +24,7 @@ android {
         //checkAllWarnings true
         enable 'TheWeatherCheck'
         enable 'LintCheck'
-        enable 'ViewId'
+        enable 'ResourceName'
     }
 
 }
