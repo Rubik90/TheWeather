@@ -36,4 +36,8 @@ public class SecondActivity extends AppCompatActivity {
                 .startChooser();
     }
 
+    public void oky() {
+
+    }
+
 }
