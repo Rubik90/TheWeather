@@ -34,7 +34,7 @@ public class LintDetector extends Detector implements UastScanner {
 
             // Full explanation of the issue; you can use some markdown markup such as
             // `monospace`, *italic*, and **bold**.
-            "Questo check evidenzia le stringhe che menzionano la parola 'lint'",
+            "Questo controllo evidenzia le stringhe che menzionano la parola 'lint'",
             Category.CORRECTNESS,
             6,
             Severity.WARNING,
