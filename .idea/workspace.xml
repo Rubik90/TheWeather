@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4215b8c-a120-41a3-89f5-34a94ea94709" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/PrefixDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/CustomIssueRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/CustomIssueRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/LintDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/LintDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/TheWeatherDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_java/src/main/java/com/is2/theweather/TheWeatherDetector.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +29,13 @@
         <projects_view />
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
