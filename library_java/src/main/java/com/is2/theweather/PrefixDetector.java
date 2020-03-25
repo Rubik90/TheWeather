@@ -40,7 +40,7 @@ public class PrefixDetector extends LayoutDetector {
             Severity.WARNING,
             new Implementation(
                     PrefixDetector.class,
-                    Scope.RESOURCE_FILE_SCOPE)
+                    Scope.ALL)
     );
 
     @Override public Collection<String> getApplicableElements() {
