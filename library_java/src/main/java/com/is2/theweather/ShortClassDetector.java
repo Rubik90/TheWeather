@@ -49,15 +49,12 @@ public class ShortClassDetector extends Detector implements UastScanner {
             @Override
             public void visitClass(UClass node) {
                 String string = node.getName();
-                try {
+
                     if (string.length() <= 4){
                         context.report(ISSUE, node, context.getNameLocation(node),
                                 "Questa classe ha un nome troppo corto, inseriscine uno piu' descrittivo");
                     }
-                }
-                catch (Exception e) {
-                    System.out.println("Eccezione sulla lunghezza di questa stringa");
-                }
+                    
             }
         };
     }
