@@ -1,4 +1,5 @@
 package com.is2.theweather;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
@@ -10,7 +11,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -20,14 +20,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.is2.theweather.models.Coord;
-import com.is2.theweather.models.Main;
-import com.is2.theweather.models.Sys;
-import com.is2.theweather.models.Wind;
 import com.is2.theweather.retrofit.WeatherAPI;
 import com.is2.theweather.models.Response;
 
-import java.text.BreakIterator;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 import retrofit2.Call;
