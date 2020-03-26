@@ -29,19 +29,17 @@ public class ApplicationTest {
         public static String[] randomStringFromFile() {
                 try {
                         String randArray[] = new String[4];
-                        //Dichiarazione array iniziale, dimensione iniziale 4
+                        //Dichiarazione array iniziale
 
                         String supArray[];
-                        //Array di supporto per salvare i dati di randArray nel caso in cui la dimensione di randArray dovesse essere reallocata
+                        //Array di supporto per salvare i dati di randArray
 
                         int dim = 4;
-                        //Variabile di supporto per mantenere in memoria la dimensione dichiarata di randArray (sostituibile con la funzione randArray.length)
 
                         int i = 0;
-                        //Indice utilzzato nel ciclo while
 
                         String tmp[];
-                        //Array string per memorizzare la stringa presa da file in piu' sotto stringhe (Dato un parametro char per effettuare uno split di una stringa)
+                        //Array string per suddividere la stringa estratta dal file in piu' sottostringhe
 
                         context = getApplicationContext();
                         InputStream is = context.getResources().openRawResource(R.raw.world_cities);
@@ -61,13 +59,13 @@ public class ApplicationTest {
                                 //Splitto la stringa letta da file in sottostringhe in base al carattere virgola ","
 
                                 if (i < dim)
-                                        //Se l'array randArray non e' stato saturato inserisco la stringa nella posizione libera e incremento i
                                 {
                                         randArray[i] = tmp[0];
                                         //il dato che ci interessa del file in ingresso e' nella posizione 0 di tmp
                                         i = i + 1;
                                 } else
-                                        //Se l'array e' saturato creo un array di dimensione dim*2, alloco sempre il doppio cosi da risparmiare nelle allocazioni totali, ad esempio se N fossero il numero di stringhe avremmo N allocazioni mentre con questo modo avremmo log(2,N) allocazioni
+                                        //Se l'array e' saturato creo un array di dimensione dim*2, alloco sempre il doppio cosi da risparmiare nelle allocazioni totali,
+                                        // ad esempio se N fossero il numero di stringhe avremmo N allocazioni mentre con questo modo avremmo log(2,N) allocazioni
                                 {
                                         dim = dim * 2;
                                         supArray = new String[dim];
@@ -77,13 +75,13 @@ public class ApplicationTest {
                                                 supArray[j] = randArray[j];
                                         }
                                         randArray = supArray;
-                                        //assegno ad randArray il riferimento di supArray (cioe' quello appena creato)
+
                                         randArray[i] = tmp[0];
                                         i = i + 1;
                                 }
                         }
                         supArray = new String[arrayDim];
-                        //Avendo delle posizioni in piu' rispetto al numero effettivo di elementi, ridimensiono supArray e lo ritorno in output
+
                         is.close();
                         for (i = 0; i < arrayDim; i++) {
                                 supArray[i] = randArray[i];
@@ -109,7 +107,6 @@ public class ApplicationTest {
                         //Ogni volta che estraggo un elemento, lo vado ad estrarre generando la posizione dell'array compresa tra min e max
 
                         randArray[i] = Values[random_int];
-                        //Estratto un elemento lo posiziono nell'array finale e nell'array di partenza lo scambio con l'ultimo elemento cosi che se l'indice gia estratto capita di nuovo l'elemento che si trova in quella posizione sara' diverso
 
                         Values[random_int] = Values[max];
                         max = max - 1;
