@@ -25,75 +25,92 @@ import static androidx.test.core.app.ApplicationProvider.getApplicationContext;
 public class ApplicationTest {
 
         private static Context context;
-        private EditText city_name2;
 
-        public String[] randomStringFromFile()
-        {
-                try
-                {
-                        String[] randArray = new String[4];
-                        String[] supArray;
+        public static String[] randomStringFromFile() {
+                try {
+                        String randArray[] = new String[4];
+                        //Dichiarazione array iniziale, dimensione iniziale 4
+
+                        String supArray[];
+                        //Array di supporto per salvare i dati di randArray nel caso in cui la dimensione di randArray dovesse essere reallocata
+
                         int dim = 4;
+                        //Variabile di supporto per mantenere in memoria la dimensione dichiarata di randArray (sostituibile con la funzione randArray.length)
+
                         int i = 0;
+                        //Indice utilzzato nel ciclo while
 
+                        String tmp[];
+                        //Array string per memorizzare la stringa presa da file in piu' sotto stringhe (Dato un parametro char per effettuare uno split di una stringa)
 
-                        String[] tmp;
                         context = getApplicationContext();
                         InputStream is = context.getResources().openRawResource(R.raw.world_cities);
                         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 
                         String line;
 
+
                         int arrayDim = 0;
-                        while((line=reader.readLine())!=null)
+                        //Variabile incrementata ogni volta che viene letta una riga, al termine del while sara' la dimensione dell'array finale
+
+                        while ((line = reader.readLine()) != null)
+                                //Lettura da file e verifica sia diverso da null
                         {
                                 arrayDim++;
                                 tmp = line.split(",");
-                                if(i<dim)
+                                //Splitto la stringa letta da file in sottostringhe in base al carattere virgola ","
+
+                                if (i < dim)
+                                        //Se l'array randArray non e' stato saturato inserisco la stringa nella posizione libera e incremento i
                                 {
                                         randArray[i] = tmp[0];
+                                        //il dato che ci interessa del file in ingresso e' nella posizione 0 di tmp
                                         i = i + 1;
-                                }
-                                else
+                                } else
+                                        //Se l'array e' saturato creo un array di dimensione dim*2, alloco sempre il doppio cosi da risparmiare nelle allocazioni totali, ad esempio se N fossero il numero di stringhe avremmo N allocazioni mentre con questo modo avremmo log(2,N) allocazioni
                                 {
-                                        //Creo un array piu' grande
                                         dim = dim * 2;
                                         supArray = new String[dim];
-                                        for(int j=0;j<dim/2;j++)
+                                        for (int j = 0; j < dim / 2; j++)
+                                                //Salvo il contenuto di randArray in supArray (nelle stesse posizioni)
                                         {
                                                 supArray[j] = randArray[j];
                                         }
                                         randArray = supArray;
+                                        //assegno ad randArray il riferimento di supArray (cioe' quello appena creato)
                                         randArray[i] = tmp[0];
                                         i = i + 1;
                                 }
                         }
                         supArray = new String[arrayDim];
+                        //Avendo delle posizioni in piu' rispetto al numero effettivo di elementi, ridimensiono supArray e lo ritorno in output
                         is.close();
-                        for(i=0;i<arrayDim;i++)
-                        {
-                                supArray[i] = randArray [i];
+                        for (i = 0; i < arrayDim; i++) {
+                                supArray[i] = randArray[i];
                         }
                         return supArray;
-                }
-                catch(IOException e)
-                {
+                } catch (IOException e) {
                         e.printStackTrace();
                         return null;
                 }
         }
 
-        public String[] randomizeArray(String[] Values)
+
+        public static String[] randomizeArray(String Values[])
+        //Creo array randomico dato un array in ingresso
         {
-                String[] randArray = new String[Values.length];
+                String randArray[] = new String[Values.length];
                 int min = 0;
                 int max = Values.length - 1;
-                int i;
+                int i = 0;
                 int random_int;
-                for(i=0;i<Values.length-1;i++)
-                {
-                        random_int = (int)(Math.random() * ((Values.length-1) - min + 1) + min);
+                for (i = 0; i < Values.length - 1; i++) {
+                        random_int = (int)(Math.random() * ((max - 1) - min + 1) + min);
+                        //Ogni volta che estraggo un elemento, lo vado ad estrarre generando la posizione dell'array compresa tra min e max
+
                         randArray[i] = Values[random_int];
+                        //Estratto un elemento lo posiziono nell'array finale e nell'array di partenza lo scambio con l'ultimo elemento cosi che se l'indice gia estratto capita di nuovo l'elemento che si trova in quella posizione sara' diverso
+
                         Values[random_int] = Values[max];
                         max = max - 1;
                 }
@@ -114,18 +131,17 @@ public class ApplicationTest {
         }
 
         @Test
-        public void testRand()
-        {
+        public void testRand() {
                 String[] Str = randomStringFromFile();
 
                 String[] randStr = randomizeArray(Str);
 
-                for (int i=0;i<randStr.length-1;i++){
+                for (int i = 0; i < randStr.length - 1; i++) {
 
                         System.out.println(randStr[i]);
                 }
 
-                for (int i=0;i<randStr.length-1;i++){
+                for (int i = 0; i < randStr.length - 1; i++) {
 
                         //TODO
                         //INSERT ALL CITIES AND TEST THE OUTPUTS
@@ -133,5 +149,3 @@ public class ApplicationTest {
         }
 
 }
-
-
