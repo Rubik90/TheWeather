@@ -11,6 +11,7 @@ import com.android.tools.lint.detector.api.XmlContext;
 import java.util.Arrays;
 import java.util.Collection;
 import org.w3c.dom.Attr;
+
 import static com.android.SdkConstants.ATTR_LABEL;
 import static com.android.SdkConstants.TAG_APPLICATION;
 
