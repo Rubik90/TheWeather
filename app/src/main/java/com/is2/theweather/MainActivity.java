@@ -64,11 +64,22 @@ public class MainActivity extends AppCompatActivity {
         coord = findViewById(R.id.coord);
         nextButton = findViewById(R.id.next);
 
-        if(ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.INTERNET},1);
+        //CONTROLLA IL PERMESSO DI ACCESSO AL GPS (FINE LOCATION)
+        if (ActivityCompat.checkSelfPermission(MainActivity.this,
+                Manifest.permission.INTERNET) !=
+                PackageManager.PERMISSION_GRANTED) {
+//RICHIEDE DINAMICAMENTE ACCESSO A GPS E INTERNET
+            ActivityCompat.requestPermissions(this, new String[]{
+                    Manifest.permission.INTERNET}, 1);
         }
+//SE NON SONO STATI DATI I PERMESSI ESCE DALL’APP
+        if (ActivityCompat.checkSelfPermission(MainActivity.this,
+                Manifest.permission.INTERNET) !=
+                PackageManager.PERMISSION_GRANTED)
+            System.exit(0);
 
     }
+
 
     public boolean onCreateOptionsMenu(Menu menu) {
 

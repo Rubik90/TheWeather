@@ -4,7 +4,6 @@ phases:
   pre_build:
     commands:
       - echo PreBuild started on `date`
-      - bash library_java/../gradlew clean install
       - bash ./gradlew lintDebug
       - echo PreBuild finished on `date`
   build:
