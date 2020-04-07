@@ -1,5 +1,7 @@
 package com.is2.theweather;
 
+import androidx.annotation.NonNull;
+
 import com.android.tools.lint.client.api.UElementHandler;
 import com.android.tools.lint.detector.api.Category;
 import com.android.tools.lint.detector.api.Detector;
@@ -10,6 +12,7 @@ import com.android.tools.lint.detector.api.JavaContext;
 import com.android.tools.lint.detector.api.Scope;
 import com.android.tools.lint.detector.api.Severity;
 
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.uast.UClass;
 import org.jetbrains.uast.UElement;
 
@@ -39,26 +42,26 @@ public class ShortClassDetector extends Detector implements UastScanner {
     );
 
     @Override
-    public List<Class<? extends UElement>> getApplicableUastTypes() {
-        return Collections.singletonList(UClass.class);
-    }
+        public List<Class<? extends UElement>> getApplicableUastTypes() {
+            return Collections.singletonList(UClass.class);
+        }
 
-    @Override
-    public UElementHandler createUastHandler(JavaContext context) {
-        return new UElementHandler() {
-            @Override
-            public void visitClass(UClass node) {
-                String string = node.getName();
-                try {
-                    if (string.length() <= 4){
-                        context.report(ISSUE, node, context.getNameLocation(node),
-                                "Questa classe ha un nome troppo corto, inseriscine uno piu' descrittivo");
+        @Override
+        public UElementHandler createUastHandler(JavaContext context) {
+            return new UElementHandler() {
+                @Override
+                public void visitClass(UClass node) {
+                    String string = node.getName();
+                    try {
+                        if (string.length() <= 4){
+                            context.report(ISSUE, node, context.getNameLocation(node),
+                                    "Questa classe ha un nome troppo corto, inseriscine uno piu' descrittivo");
+                        }
+                    }
+                    catch (Exception e) {
+                        System.out.println("Eccezione Java catturata.");
                     }
                 }
-                catch (Exception e) {
-                    System.out.println("Eccezione Java catturata.");
-                }
-            }
-        };
-    }
+            };
+        }
 }

@@ -1,4 +1,4 @@
-#Fri Mar 27 16:47:59 CET 2020
+#Sun Apr 05 18:09:21 CEST 2020
 base.0=C\:\\Users\\Antonio\\Desktop\\is2\\TheWeather\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
